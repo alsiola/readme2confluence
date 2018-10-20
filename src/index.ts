@@ -9,8 +9,6 @@ import { promisify } from "util";
 
 const convertToHTML: (a: string) => Promise<string> = promisify(marked) as any;
 
-console.log(process.env);
-
 // Setup
 program
     .version("1.0.0")
