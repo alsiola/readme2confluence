@@ -1,6 +1,6 @@
 {
     "name": "readme2confluence",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Publish a markdown file to confluent cloud",
     "main": "lib/index.js",
     "bin": {
@@ -8,7 +8,8 @@
     },
     "scripts": {
         "prepublishOnly": "yarn build",
-        "build": "tsc"
+        "build": "tsc",
+        "postpublish": "readme2confluence"
     },
     "repository": {
         "type": "git",
@@ -31,6 +32,7 @@
         "@types/fs-extra": "^5.0.4",
         "@types/marked": "^0.4.2",
         "@types/node": "^10.12.0",
+        "readme2confluence": "^1.0.5",
         "typescript": "^3.1.3"
     }
 }

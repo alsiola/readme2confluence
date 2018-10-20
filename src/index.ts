@@ -11,7 +11,7 @@ const convertToHTML: (a: string) => Promise<string> = promisify(marked) as any;
 
 // Setup
 program
-    .version("1.0.5")
+    .version("1.0.6")
     .option("-u --username [username]", "Username")
     .option("-k --apikey [apikey]", "API Key")
     .option("-s --space [space]", "Confluent Space")
