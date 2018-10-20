@@ -1,0 +1,38 @@
+{
+    "name": "readme2confluent",
+    "version": "1.0.1",
+    "description": "Publish a markdown file to confluent cloud",
+    "main": "lib/index.js",
+    "bin": {
+        "readme2confluent": "./lib/index.js"
+    },
+    "scripts": {
+        "prepublishOnly": "yarn build",
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alsiola/readme2confluent.git"
+    },
+    "author": "Alex Young",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/alsiola/readme2confluent/issues"
+    },
+    "homepage": "https://github.com/alsiola/readme2confluent#readme",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "chalk": "^2.4.1",
+        "commander": "^2.19.0",
+        "fs-extra": "^7.0.0",
+        "marked": "^0.5.1"
+    },
+    "devDependencies": {
+        "@types/chalk": "^2.2.0",
+        "@types/commander": "^2.12.2",
+        "@types/fs-extra": "^5.0.4",
+        "@types/marked": "^0.4.2",
+        "@types/node": "^10.12.0",
+        "typescript": "^3.1.3"
+    }
+}
