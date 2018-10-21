@@ -1,6 +1,6 @@
 {
     "name": "readme2confluence",
-    "version": "1.0.7",
+    "version": "1.0.9",
     "description": "Publish a markdown file to confluent cloud",
     "main": "lib/index.js",
     "bin": {
